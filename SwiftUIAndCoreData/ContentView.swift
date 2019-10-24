@@ -6,12 +6,35 @@
 //  Copyright © 2019 Raphael Berendes (extern). All rights reserved.
 //
 
+import CoreData
 import SwiftUI
 
 struct ContentView: View {
+    
+    @FetchRequest(fetchRequest: Things.allIdeasFetchRequest()) var things: FetchedResults<Things>
+    
     var body: some View {
-        Text("Hello World")
+        
+        VStack {
+            List(things) { thing in
+                Text(thing.name ?? "")
+            }
+            
+            Button(action: {
+                Things.saveRandomThing()
+            }) {
+                Text("Save thing")
+            }
+            Spacer()
+            Button(action: {
+                Things.deleteAll()
+            }) {
+                Text("Delete all things")
+                    .foregroundColor(Color.red)
+            }
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
