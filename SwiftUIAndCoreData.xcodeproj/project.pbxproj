@@ -15,6 +15,7 @@
 		21E19C802361818B0063A046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E19C7F2361818B0063A046 /* Preview Assets.xcassets */; };
 		21E19C832361818B0063A046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E19C812361818B0063A046 /* LaunchScreen.storyboard */; };
 		21E19C8B236181D90063A046 /* Things+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E19C8A236181D90063A046 /* Things+Extension.swift */; };
+		21E19C8D236193580063A046 /* ThingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E19C8C236193580063A046 /* ThingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		21E19C822361818B0063A046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21E19C842361818B0063A046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21E19C8A236181D90063A046 /* Things+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Things+Extension.swift"; sourceTree = "<group>"; };
+		21E19C8C236193580063A046 /* ThingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				21E19C77236181890063A046 /* SwiftUIAndCoreData.xcdatamodeld */,
 				21E19C7E2361818B0063A046 /* Preview Content */,
 				21E19C8A236181D90063A046 /* Things+Extension.swift */,
+				21E19C8C236193580063A046 /* ThingCell.swift */,
 			);
 			path = SwiftUIAndCoreData;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				21E19C74236181890063A046 /* AppDelegate.swift in Sources */,
 				21E19C7B236181890063A046 /* ContentView.swift in Sources */,
 				21E19C8B236181D90063A046 /* Things+Extension.swift in Sources */,
+				21E19C8D236193580063A046 /* ThingCell.swift in Sources */,
 				21E19C76236181890063A046 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,13 +11,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @FetchRequest(fetchRequest: Things.allIdeasFetchRequest()) var things: FetchedResults<Things>
+    @FetchRequest(fetchRequest: Things.allThingsFetchRequest()) var things: FetchedResults<Things>
     
     var body: some View {
         
         VStack {
             List(things) { thing in
-                Text(thing.name ?? "")
+                ThingCell(with: thing.name)
             }
             
             Button(action: {

@@ -13,7 +13,7 @@ extension Things: Identifiable {}
 
 extension Things {
     
-    static func allIdeasFetchRequest() -> NSFetchRequest<Things> {
+    static func allThingsFetchRequest() -> NSFetchRequest<Things> {
         
         let request: NSFetchRequest<Things> = Things.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: NSExpression(forKeyPath: \Things.name).keyPath, ascending: true)]
